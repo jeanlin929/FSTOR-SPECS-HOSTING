@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ReDoc</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+    ReDoc doesn't change outer page styles
+    -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!--<redoc spec-url='/spec.json'></redoc>
+<script src="/assets/redoc/redoc.standalone.js">
+
+https://raw.githubusercontent.com/webhookrelay/swagger-webhookrelay/master/openapi.yaml
+</script>-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
+<script>
+
+    Redoc.init('https://github.com/J2Global-Fax/FSTOR-SPECS/tree/master/spec/index.yaml', {
+        scrollYOffset: 60,
+        hideDownloadButton: true
+    }, document.getElementById('redoc'))
+</script>
+</body>
+</html>
